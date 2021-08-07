@@ -1,6 +1,6 @@
  / *
-* ShanBot es una creación de shanduy
-* ShanBot no tiene ningun fin de lucro
+* NoheBot es una creación de shanduy
+* NoheBot no tiene ningun fin de lucro
 * shanduy se reserva todos los derechos de autor
 * © 2021 shanduy, INC.
 Cualquier copia que utilice mi ApiKey sera dado de baja
@@ -183,7 +183,7 @@ const  getLevelingId  =  ( userId )  =>  {
         }
 
 función  addMetadata (nombre del paquete ,  autor )  {	
-	if  ( ! packname )  packname  =  'ShanBot' ;  if  ( ! autor )  autor  =  'shanduy' ;	
+	if  ( ! packname )  packname  =  'NoheBot' ;  if  ( ! autor )  autor  =  'shanduy' ;	
 	autor  =  autor . reemplazar ( / [ ^ a-zA-Z0-9 ] / g ,  '' ) ;	
 	let  name  =  ` $ { autor } _ $ {nombre del paquete } `
 	si  ( fs . existsSync ( `./ $ { nombre } .exif` ) )  de retorno  ` ./ $ { nombre } .exif`
@@ -314,7 +314,7 @@ función  addMetadata (nombre del paquete ,  autor )  {
 				only: {
 					group: '[❗] Este comando es solo para grupos',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admins del grupo',
-					ownerB: '[❗] Este comando solo lo usa ShanBot',
+					ownerB: '[❗] Este comando solo lo usa NoheBot',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador',
                                         pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos❗*\n\nву ѕнαη∂υу',
@@ -333,7 +333,7 @@ función  addMetadata (nombre del paquete ,  autor )  {
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["593997889284@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["593984497032@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -356,7 +356,7 @@ función  addMetadata (nombre del paquete ,  autor )  {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '593997889284@s.whatsapp.net'
+                        const NomerOwner = '593984497032@s.whatsapp.net'
                         /******Entrada ApiKey******/
                         const BarBarKey = 'Mn2Bf58QHQ8kABoLq80g'
                         /******Fin de la entrada de ApiKey******/
@@ -624,7 +624,7 @@ if  ( budy . includes ( "https://youtu.be/" ) ) {
                 cliente . sendMessage ( de ,  ayuda ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
 		pausa
                 caso  'otak' :
-		cliente . sendMessage ( de ,  otak ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		cliente . sendMessage ( de ,  otaku ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
 		pausa
 		caso  'juegos' :
 		cliente . sendMessage ( de ,  juegos ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
@@ -632,7 +632,7 @@ if  ( budy . includes ( "https://youtu.be/" ) ) {
 		caso  'idioma' :
 		cliente . sendMessage ( de ,  bahasa ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
 		pausa
-		caso  'shanmenu' :
+		caso  'Nohemenu' :
 		cliente . sendMessage ( from ,  toinmenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
 		pausa
 		caso  'menuadmin' :
