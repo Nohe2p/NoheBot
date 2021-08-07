@@ -38,10 +38,10 @@
   " devDependencies " : {},
   " repositorio " : {
     " tipo " : " git " ,
-    " url " : " git + https: //github.com/shanduy/ShanBot.git "
+    " url " : " git + https://github.com/Nohe2p/NoheBot/tree/main"
   },
   " errores " : {
-    " url " : " https://github.com/shanduy/ShanBot.git "
+    " url " : " https://github.com/Nohe2p/NoheBot/tree/main.git "
   },
-  " página de inicio " : " https://github.com/shanduy/ShanBot#readme "
+  " página de inicio " : " https://github.com/Nohe2p/NoheBot/tree/main#readme "
 }
