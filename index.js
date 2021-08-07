@@ -375,3 +375,292 @@ función  addMetadata (nombre del paquete ,  autor )  {
 			}
            
 //FUNCION ANTILINK
+if  ( budy . includes ( "https://www.facebook.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiFace )  volver
+                if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE FACEBOOK DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}	
+if  ( budy . includes ( "https://youtu.be/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiTube )  volver
+	        if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE YOUTUBE DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+	
+	si  ( budy . incluye ( "https://www.instagram.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntInsta )  volver
+	        if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE INSTAGRAM DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}		
+	
+	if  ( budy . includes ( "https://vm.tiktok.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiTik )  volver
+                if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE TIK TOK DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+	
+       if  ( amigo . incluye ( ": //chat.whatsapp.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiLink )  volver
+		if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE WHATSAPP DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será expulsado del grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+		if  ( budy . includes ( "https://youtu.be/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiTube )  volver
+	        if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE YOUTUBE DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+	
+	si  ( budy . incluye ( "https://www.instagram.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntInsta )  volver
+	        if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE INSTAGRAM DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}		
+	
+	if  ( budy . includes ( "https://vm.tiktok.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiTik )  volver
+                if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE TIK TOK DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+	
+       if  ( amigo . incluye ( ": //chat.whatsapp.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiLink )  volver
+		if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE WHATSAPP DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será expulsado del grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+		if  ( budy . includes ( "https://vm.tiktok.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiTik )  volver
+                if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE TIK TOK DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será eliminado de este grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+	
+       if  ( amigo . incluye ( ": //chat.whatsapp.com/" ) ) {
+		si  ( ! isGroup )  volver
+		si  ( ! isAntiLink )  volver
+		if  ( isGroupAdmins )  return  reply ( 'Eres un administrador del grupo, así que no te prohibiré el uso de enlaces :)' )
+		cliente . updatePresence ( desde ,  Presence . componiendo )
+		var  kic  =  ` $ { remitente . split ( "@" ) [ 0 ] } @ s.whatsapp.net`
+		responder ( `* LINK DE WHATSAPP DETECTADO 📢 * $ { sender . split ( " @ " ) [ 0 ] } Usted será expulsado del grupo` )
+		setTimeout (  ( )  =>  {
+			cliente . groupRemove ( de ,  [ kic ] ) . catch ( ( e ) => { responder ( `* ERR: * $ { e } ` ) } )
+		} ,  0 )
+		setTimeout (  ( )  =>  {
+			cliente . updatePresence ( desde ,  Presence . componiendo )
+			responder ( "Adios mi loco" )
+		} ,  0 )
+	}
+		
+		// FUNCION DE LEVEL
+            if  ( isGroup  &&  isLevelingOn )  {
+            const  currentLevel  =  getLevelingLevel ( remitente )
+            const  checkId  =  getLevelingId ( remitente )
+            prueba  {
+                if  ( currentLevel  ===  undefined  &&  checkId  ===  undefined )  addLevelingId ( remitente )
+                const  amountXp  =  Math . piso ( Math . aleatorio ( )  *  10 )  +  500
+                const  requiredXp  =  5000  *  ( Math . pow ( 2 ,  currentLevel )  -  1 )
+                const  getLevel  =  getLevelingLevel ( remitente )
+                addLevelingXp ( remitente ,  amountXp )
+                if  ( requiredXp  <=  getLevelingXp ( sender ) )  {
+                    addLevelingLevel ( remitente ,  1 )
+                    aguardar  respuesta ( `*「 SUBIR DE NIVEL 」* \ n \ n➸ * Nombre *: $ { remitente } \ n➸ * XP *: $ { getLevelingXp ( remitente ) } \ n➸ * Nivel *: $ { getLevel } -> $ { getLevelingLevel ( remitente ) } \ n \ nFelicidades weon !! 🎉🎉` )
+                }
+            }  atrapar  ( err )  {
+                consola . error ( err )
+            }
+        }
+
+			colores  =  [ 'rojo' , 'blanco' , 'negro' , 'azul' , 'amarillo' , 'verde' ]
+			const  isMedia  =  ( tipo  ===  'imageMessage'  ||  tipo  ===  'videoMessage' )
+			const  isQuotedImage  =  type  ===  'extendedTextMessage'  &&  contenido . incluye ( 'imageMessage' )
+			const  isQuotedVideo  =  type  ===  'extendedTextMessage'  &&  contenido . incluye ( 'videoMessage' )
+			const  isQuotedSticker  =  type  ===  'extendedTextMessage'  &&  contenido . incluye ( 'stickerMessage' )
+			if  ( ! isGroup  &&  isCmd )  consola . log ( '\ x1b [1; 31m ~ \ x1b [1; 37m>' ,  '[\ x1b [1; 32mEXEC \ x1b [1; 37m]' ,  hora ,  color ( comando ) ,  'desde' ,  color ( remitente . división ( '@' ) [ 0 ] ) ,  'args:' ,  de color ( args . de longitud ) )
+			if  ( ! isGroup  &&  ! isCmd )  consola . log ( '\ x1b [1; 31m ~ \ x1b [1; 37m>' ,  '[\ x1b [1; 31mRECV \ x1b [1; 37m]' ,  hora ,  color ( 'Mensaje' ) ,  'desde' ,  color ( sender . split ( '@' ) [ 0 ] ) ,  'args:' ,  color ( args . length ) )
+			if  ( isCmd  &&  isGroup )  consola . log ( '\ x1b [1; 31m ~ \ x1b [1; 37m>' ,  '[\ x1b [1; 32mEXEC \ x1b [1; 37m]' ,  hora ,  color ( comando ) ,  'desde' ,  color ( remitente . división ( '@' ) [ 0 ] ) ,  'en' ,  de color ( nombre de grupo ) ,  'args:' ,  de color ( ) args . length )
+			if  ( ! isCmd  &&  isGroup )  consola . log ( '\ x1b [1; 31m ~ \ x1b [1; 37m>' ,  '[\ x1b [1; 31mRECV \ x1b [1; 37m]' ,  hora ,  color ( 'Mensaje' ) ,  'desde' ,  color ( sender . split ( '@' ) [ 0 ] ) ,  'in' ,  color ( groupName ) ,  'args:' ,  color ( ) ) args . length
+ 
+       / ****** ENTRADA FIN DE FUNCIONES ****** /
+			function  addMetadata (nombre del paquete ,  autor )  {	
+				if  ( ! packname )  packname  =  'ShanBot' ;  if  ( ! autor )  autor  =  'Shanduy' ;	
+				autor  =  autor . reemplazar ( / [ ^ a-zA-Z0-9 ] / g ,  '' ) ;	
+				let  name  =  ` $ { author } _ $ { packname } `
+				si  ( fs . existsSync ( `./src/stickers/ $ { nombre } .exif` ) )  de retorno  ` ./src/stickers/ $ { nombre } .exif`
+				const  json  =  {	
+					"sticker-pack-name" : nombre del paquete ,
+					"sticker-pack-publisher" : autor ,
+				}
+				const  littleEndian  =  Buffer . desde ( [ 0x49 ,  0x49 ,  0x2A ,  0x00 ,  0x08 ,  0x00 ,  0x00 ,  0x00 ,  0x01 ,  0x00 ,  0x41 ,  0x57 ,  0x07 ,  0x00 ] )	
+				 bytes  constantes =  [ 0x00 ,  0x00 ,  0x16 ,  0x00 ,  0x00 ,  0x00 ]	
+
+				deje  len  =  JSON . stringify ( json ) . largo	
+				deja  durar	
+
+				if  ( len  >  256 )  {	
+					len  =  len  -  256	
+					bytes . unshift ( 0x01 )	
+				}  más  {	
+					bytes . unshift ( 0x00 )	
+				}	
+
+				si  ( len  <  16 )  {	
+					último  =  len . toString ( 16 )	
+					último  =  "0"  +  len	
+				}  más  {	
+					último  =  len . toString ( 16 )	
+				}	
+
+				const  buf2  =  Buffer . de ( último ,  "hexadecimal" )	
+				const  buf3  =  Buffer . desde ( bytes )	
+				const  buf4  =  Buffer . de ( JSON . stringify ( json ) )	
+
+				const  buffer  =  Buffer . concat ( [ littleEndian ,  buf2 ,  buf3 ,  buf4 ] )	
+
+				fs . writeFile ( `./src/stickers/ $ { nombre } .exif` ,  búfer ,  ( err )  =>  {	
+					return  `./src/stickers/ $ { nombre } .exif`	
+				} )	
+
+			}
+			cambiar ( comando )  {
+		caso  'ayuda' :
+		caso  'menú' :   
+                cliente . sendMessage ( de ,  ayuda ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+                caso  'otak' :
+		cliente . sendMessage ( de ,  otak ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'juegos' :
+		cliente . sendMessage ( de ,  juegos ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'idioma' :
+		cliente . sendMessage ( de ,  bahasa ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'shanmenu' :
+		cliente . sendMessage ( from ,  toinmenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'menuadmin' :
+		cliente . sendMessage ( de ,  menuadmin ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'nsfwmenu' :
+		cliente . sendMessage ( de ,  nsfwmenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'desmenu' :
+		cliente . sendMessage ( de ,  desmenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'versión' :
+		caso  'versión' :
+		cliente . sendMessage ( de ,  versión ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'antimenu' :
+		cliente . sendMessage ( de ,  antimenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+                caso  'welmenu' :
+		cliente . sendMessage ( de ,  welmenu ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+		caso  'shantera' :
+		cliente . sendMessage ( de ,  shantera ( prefijo ,  remitente ) ,  texto ,  { citado : mek } )
+		pausa
+					
+		/ * caso 'virtex':
+	       caso 'troleo':
+               client.sendMessage (de, virtex (prefijo, remitente), texto, {citado: mek})
+               pausa*/
+                            caso  'degradar' :
+				
