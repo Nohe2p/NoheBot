@@ -61,10 +61,10 @@ const  { nsfwmenu }  =  require ( './src/nsfwmenu' )
 const  { desmenu }  =  require ( './src/desmenu' )
 const  { versión }  =  require ( './src/version' )
 const  { juegos }  =  require ( './src/juegos' )
-const  { shantera }  =  require ( './src/shantera' )
+const  { conversa }  =  require ( './src/conversa' )
 const  { antimenu }  =  require ( './src/antimenu' )
 const  { welmenu }  =  require ( './src/welmenu' )
-const  { otak }  =  require ( './src/otak' )
+const  { otaku }  =  require ( './src/otaku' )
 / * const {mediamenu} = require ('./ database / menu / mediamenu')
 const {educationmenu} = require ('./ database / menu / educationmenu')
 const {downloadermenu} = require ('./ database / menu / downloadermenu')
@@ -86,9 +86,9 @@ const {othermenu} require ('./ database / menu / othermenu') * /
 / ****** CARGA DE ENTRADA VCARD ****** /
 const  vcard  =  'BEGIN: VCARD \ n'  // Tarjeta de contacto
             +  'VERSIÓN: 3.0 \ n' 
-            +  'FN: Shan \ n'  // Nombre
+            +  'FN: Nohe \ n'  // Nombre
             +  'ORG: Shanduy; \ n'  // Propietario
-            +  'TEL; type = CELL; type = VOICE; waid = 593967689722: +593 96768 9722 \ n'  // ID de WhatsApp + número de teléfono
+            +  'TEL; type = CELL; type = VOICE; waid = +593984497032: +593984497032 \ n'  // ID de WhatsApp + número de teléfono
             +  'FIN: VCARD'
 / ****** FIN DE ENTRADA VCARD ****** /
 
@@ -291,8 +291,8 @@ función  addMetadata (nombre del paquete ,  autor )  {
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			const time = moment.tz('America/Guayaquil').format('HH:mm:ss')
-			const date = moment.tz('America/Guayaquil').format('DD/MM/YY')
+			const time = moment.tz('America/Portoviejo').format('HH:mm:ss')
+			const date = moment.tz('America/Portoviejo').format('DD/MM/YY')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
