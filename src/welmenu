@@ -1,0 +1,14 @@
+const  welmenu  =  ( prefijo ,  pushname )  =>  {
+    volver  '
+* Comandos De Bienvenida 👋 *
+* PARA ACTIVAR LA BIENVENIDA *
+- $ { prefix } bienvenido 1
+* PARA DESACTIVAR LA BIENVENIDA *
+- $ { prefix } bienvenido 0
+_Para activar este comando el bot necesita tener admin_
+ву ѕнαη∂υу
+'
+
+}
+
+Exportaciones . welmenu  =  welmenu
