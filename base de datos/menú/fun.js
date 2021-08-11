@@ -23,3 +23,5 @@ const  fun  =  ( prefijo ,  ownerBot ,  botName )  =>  {
   ├─ ❏ $ { prefix } dare
   └─ ❏ $ { prefijo } simi`
 }
+
+Exportaciones . divertido  =  divertido
