@@ -12,7 +12,7 @@ corrección de auditoría npm
 npm i imgbb-uploader
 npm cache clean -f
 npm install --dev
-npm tengo
+npm start 
 
 echo  " [*] Se han instalado todas las dependencias, ejecute el comando \" npm start \ " para iniciar inmediatamente el script "
 echo  " Actualizaciones: corregir errores "
